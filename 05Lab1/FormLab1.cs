@@ -15,8 +15,10 @@ namespace _05Lab1
             string getInput;
             getInput = frmFileName.txtFileName.Text;
 
-            string docPath =
-            Environment.GetFolderPath(Environment.SpecialFolder.MyDocuments);
+            string RelativePath = @"..\..\Paguiligan_Kiel.LabStream";
+            string docPath = Path.GetFullPath(RelativePath);
+
+
             using (StreamWriter outputFile = new StreamWriter(Path.Combine(docPath,
             FrmFileName.SetFileName)))
             {
