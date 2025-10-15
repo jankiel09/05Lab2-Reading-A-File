@@ -28,18 +28,48 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormLab1));
+            txtInput = new TextBox();
+            btnCreate = new Button();
             SuspendLayout();
             // 
-            // Form1
+            // txtInput
+            // 
+            txtInput.Location = new Point(42, 32);
+            txtInput.Multiline = true;
+            txtInput.Name = "txtInput";
+            txtInput.Size = new Size(402, 145);
+            txtInput.TabIndex = 0;
+            // 
+            // btnCreate
+            // 
+            btnCreate.Font = new Font("Segoe UI", 15.75F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            btnCreate.Location = new Point(187, 224);
+            btnCreate.Name = "btnCreate";
+            btnCreate.Size = new Size(106, 56);
+            btnCreate.TabIndex = 1;
+            btnCreate.Text = "Create";
+            btnCreate.UseVisualStyleBackColor = true;
+            btnCreate.Click += btnCreate_Click;
+            // 
+            // FormLab1
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(486, 417);
-            Name = "Form1";
+            BackgroundImage = (Image)resources.GetObject("$this.BackgroundImage");
+            BackgroundImageLayout = ImageLayout.Stretch;
+            ClientSize = new Size(492, 319);
+            Controls.Add(btnCreate);
+            Controls.Add(txtInput);
+            Name = "FormLab1";
             Text = "Form1";
             ResumeLayout(false);
+            PerformLayout();
         }
 
         #endregion
+
+        private TextBox txtInput;
+        private Button btnCreate;
     }
 }

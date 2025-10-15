@@ -28,12 +28,62 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Text = "FrmFIleName";
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmFIleName));
+            txtFileName = new TextBox();
+            label1 = new Label();
+            btnOkay = new Button();
+            SuspendLayout();
+            // 
+            // txtFileName
+            // 
+            txtFileName.Location = new Point(22, 75);
+            txtFileName.Multiline = true;
+            txtFileName.Name = "txtFileName";
+            txtFileName.Size = new Size(415, 52);
+            txtFileName.TabIndex = 0;
+            // 
+            // label1
+            // 
+            label1.AutoSize = true;
+            label1.BackColor = Color.Transparent;
+            label1.Font = new Font("Segoe UI", 18F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            label1.ForeColor = Color.White;
+            label1.Location = new Point(22, 27);
+            label1.Name = "label1";
+            label1.Size = new Size(201, 32);
+            label1.TabIndex = 1;
+            label1.Text = "Enter File Name:";
+            // 
+            // btnOkay
+            // 
+            btnOkay.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            btnOkay.Location = new Point(187, 177);
+            btnOkay.Name = "btnOkay";
+            btnOkay.Size = new Size(89, 32);
+            btnOkay.TabIndex = 2;
+            btnOkay.Text = "Okay";
+            btnOkay.UseVisualStyleBackColor = true;
+            // 
+            // FrmFIleName
+            // 
+            AutoScaleDimensions = new SizeF(7F, 15F);
+            AutoScaleMode = AutoScaleMode.Font;
+            BackgroundImage = (Image)resources.GetObject("$this.BackgroundImage");
+            BackgroundImageLayout = ImageLayout.Stretch;
+            ClientSize = new Size(459, 259);
+            Controls.Add(btnOkay);
+            Controls.Add(label1);
+            Controls.Add(txtFileName);
+            Name = "FrmFIleName";
+            Text = "FrmFIleName";
+            ResumeLayout(false);
+            PerformLayout();
         }
 
         #endregion
+
+        private TextBox txtFileName;
+        private Label label1;
+        private Button btnOkay;
     }
 }
