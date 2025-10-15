@@ -63,6 +63,7 @@
             btnOkay.TabIndex = 2;
             btnOkay.Text = "Okay";
             btnOkay.UseVisualStyleBackColor = true;
+            btnOkay.Click += btnOkay_Click;
             // 
             // FrmFileName
             // 
@@ -82,7 +83,7 @@
 
         #endregion
         private Label label1;
-        private Button btnOkay;
         public TextBox txtFileName;
+        public Button btnOkay;
     }
 }
