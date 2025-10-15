@@ -10,11 +10,13 @@ using System.Windows.Forms;
 
 namespace _05Lab1
 {
-    public partial class FrmFIleName : Form
+    public partial class FrmFileName : Form
     {
-        public FrmFIleName()
+        public FrmFileName()
         {
             InitializeComponent();
         }
+
+        public static string SetFileName { get; internal set; }
     }
 }

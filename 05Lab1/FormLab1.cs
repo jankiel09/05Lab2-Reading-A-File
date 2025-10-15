@@ -9,6 +9,20 @@ namespace _05Lab1
 
         private void btnCreate_Click(object sender, EventArgs e)
         {
+            FrmFileName frmFileName = new FrmFileName();
+            ShowDialog();
+
+            string getInput;
+            getInput = frmFileName.txtFileName.Text;
+
+            string docPath =
+            Environment.GetFolderPath(Environment.SpecialFolder.MyDocuments);
+            using (StreamWriter outputFile = new StreamWriter(Path.Combine(docPath,
+            FrmFileName.SetFileName)))
+            {
+                outputFile.WriteLine(getInput);
+                Console.WriteLine(getInput);
+            }
 
         }
     }

@@ -35,16 +35,16 @@
             // 
             // txtInput
             // 
-            txtInput.Location = new Point(42, 32);
+            txtInput.Location = new Point(48, 42);
             txtInput.Multiline = true;
             txtInput.Name = "txtInput";
-            txtInput.Size = new Size(402, 145);
+            txtInput.Size = new Size(396, 130);
             txtInput.TabIndex = 0;
             // 
             // btnCreate
             // 
             btnCreate.Font = new Font("Segoe UI", 15.75F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            btnCreate.Location = new Point(187, 224);
+            btnCreate.Location = new Point(195, 213);
             btnCreate.Name = "btnCreate";
             btnCreate.Size = new Size(106, 56);
             btnCreate.TabIndex = 1;

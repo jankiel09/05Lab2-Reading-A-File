@@ -1,6 +1,6 @@
 ﻿namespace _05Lab1
 {
-    partial class FrmFIleName
+    partial class FrmFileName
     {
         /// <summary>
         /// Required designer variable.
@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmFIleName));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmFileName));
             txtFileName = new TextBox();
             label1 = new Label();
             btnOkay = new Button();
@@ -64,7 +64,7 @@
             btnOkay.Text = "Okay";
             btnOkay.UseVisualStyleBackColor = true;
             // 
-            // FrmFIleName
+            // FrmFileName
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
@@ -74,16 +74,15 @@
             Controls.Add(btnOkay);
             Controls.Add(label1);
             Controls.Add(txtFileName);
-            Name = "FrmFIleName";
+            Name = "FrmFileName";
             Text = "FrmFIleName";
             ResumeLayout(false);
             PerformLayout();
         }
 
         #endregion
-
-        private TextBox txtFileName;
         private Label label1;
         private Button btnOkay;
+        public TextBox txtFileName;
     }
 }
