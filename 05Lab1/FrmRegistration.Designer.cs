@@ -30,8 +30,6 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmRegistration));
             label1 = new Label();
-            label2 = new Label();
-            label3 = new Label();
             label4 = new Label();
             label5 = new Label();
             label6 = new Label();
@@ -48,6 +46,9 @@
             label12 = new Label();
             textBox4 = new TextBox();
             textBox5 = new TextBox();
+            comboBox2 = new ComboBox();
+            textBox6 = new TextBox();
+            button1 = new Button();
             SuspendLayout();
             // 
             // label1
@@ -61,29 +62,6 @@
             label1.Size = new Size(221, 47);
             label1.TabIndex = 0;
             label1.Text = "Registration";
-            // 
-            // label2
-            // 
-            label2.AutoSize = true;
-            label2.BackColor = Color.Transparent;
-            label2.ForeColor = Color.White;
-            label2.Location = new Point(85, 103);
-            label2.Name = "label2";
-            label2.Size = new Size(70, 15);
-            label2.TabIndex = 1;
-            label2.Text = "Student No.";
-            // 
-            // label3
-            // 
-            label3.AutoSize = true;
-            label3.BackColor = Color.Transparent;
-            label3.Font = new Font("Segoe UI Semibold", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label3.ForeColor = Color.White;
-            label3.Location = new Point(151, 156);
-            label3.Name = "label3";
-            label3.Size = new Size(86, 21);
-            label3.TabIndex = 2;
-            label3.Text = "Last Name";
             // 
             // label4
             // 
@@ -243,12 +221,39 @@
             textBox5.Size = new Size(51, 23);
             textBox5.TabIndex = 18;
             // 
+            // comboBox2
+            // 
+            comboBox2.FormattingEnabled = true;
+            comboBox2.Location = new Point(446, 187);
+            comboBox2.Name = "comboBox2";
+            comboBox2.Size = new Size(251, 23);
+            comboBox2.TabIndex = 19;
+            // 
+            // textBox6
+            // 
+            textBox6.Location = new Point(461, 243);
+            textBox6.Name = "textBox6";
+            textBox6.Size = new Size(142, 23);
+            textBox6.TabIndex = 20;
+            // 
+            // button1
+            // 
+            button1.Location = new Point(335, 295);
+            button1.Name = "button1";
+            button1.Size = new Size(75, 23);
+            button1.TabIndex = 21;
+            button1.Text = "Register";
+            button1.UseVisualStyleBackColor = true;
+            // 
             // FrmRegistration
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             BackgroundImage = (Image)resources.GetObject("$this.BackgroundImage");
-            ClientSize = new Size(800, 450);
+            ClientSize = new Size(768, 345);
+            Controls.Add(button1);
+            Controls.Add(textBox6);
+            Controls.Add(comboBox2);
             Controls.Add(textBox5);
             Controls.Add(textBox4);
             Controls.Add(label12);
@@ -265,8 +270,6 @@
             Controls.Add(label6);
             Controls.Add(label5);
             Controls.Add(label4);
-            Controls.Add(label3);
-            Controls.Add(label2);
             Controls.Add(label1);
             Name = "FrmRegistration";
             Text = "FrmRegistration";
@@ -277,8 +280,6 @@
         #endregion
 
         private Label label1;
-        private Label label2;
-        private Label label3;
         private Label label4;
         private Label label5;
         private Label label6;
@@ -295,5 +296,8 @@
         private Label label12;
         private TextBox textBox4;
         private TextBox textBox5;
+        private ComboBox comboBox2;
+        private TextBox textBox6;
+        private Button button1;
     }
 }
