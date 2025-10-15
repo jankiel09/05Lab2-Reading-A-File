@@ -10,7 +10,7 @@ namespace _05Lab1
         private void btnCreate_Click(object sender, EventArgs e)
         {
             FrmFileName frmFileName = new FrmFileName();
-            ShowDialog();
+            frmFileName.ShowDialog();
 
             string getInput;
             getInput = frmFileName.txtFileName.Text;

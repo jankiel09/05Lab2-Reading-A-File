@@ -12,6 +12,7 @@ namespace _05Lab1
             // see https://aka.ms/applicationconfiguration.
             ApplicationConfiguration.Initialize();
             Application.Run(new FormLab1());
+            Application.Run(new FrmFileName());
         }
     }
 }

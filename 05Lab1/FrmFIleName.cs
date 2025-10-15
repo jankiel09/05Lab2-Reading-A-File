@@ -12,11 +12,17 @@ namespace _05Lab1
 {
     public partial class FrmFileName : Form
     {
+        public static string SetFileName { get; internal set; }
         public FrmFileName()
         {
+
             InitializeComponent();
         }
 
-        public static string SetFileName { get; internal set; }
+        private void btnOkay_Click(object sender, EventArgs e)
+        {
+            SetFileName = txtFileName.Text + ".txt";
+            Close();
+        }
     }
 }
