@@ -38,16 +38,12 @@
             // 
             lvShowText.Location = new Point(12, 12);
             lvShowText.Name = "lvShowText";
-            lvShowText.Size = new Size(335, 204);
+            lvShowText.Size = new Size(487, 262);
             lvShowText.TabIndex = 0;
             lvShowText.UseCompatibleStateImageBehavior = false;
-            lvShowText.SelectedIndexChanged += lvShowText_SelectedIndexChanged;
-            // 
-            // btnOpen
-            // 
             btnOpen.Font = new Font("Segoe UI Semibold", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
             btnOpen.ForeColor = SystemColors.ActiveCaptionText;
-            btnOpen.Location = new Point(125, 237);
+            btnOpen.Location = new Point(200, 291);
             btnOpen.Name = "btnOpen";
             btnOpen.Size = new Size(107, 36);
             btnOpen.TabIndex = 1;
@@ -65,7 +61,7 @@
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             BackgroundImage = (Image)resources.GetObject("$this.BackgroundImage");
-            ClientSize = new Size(359, 297);
+            ClientSize = new Size(511, 350);
             Controls.Add(btnOpen);
             Controls.Add(lvShowText);
             ForeColor = SystemColors.ControlLight;

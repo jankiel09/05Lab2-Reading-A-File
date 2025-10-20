@@ -24,6 +24,8 @@ namespace _05Lab1
             {
                 outputFile.WriteLine(getInput);
                 Console.WriteLine(getInput);
+
+                Close();
             }
 
         }

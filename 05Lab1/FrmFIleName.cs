@@ -22,6 +22,8 @@ namespace _05Lab1
         private void btnOkay_Click(object sender, EventArgs e)
         {
             SetFileName = txtFileName.Text + ".txt";
+            FrmRegistration registrationForm2 = new FrmRegistration();
+            registrationForm2.Show();
             Close();
         }
     }
