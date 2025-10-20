@@ -42,6 +42,15 @@ namespace _05Lab1
             }
         }
 
+        private void btnOpen_Click(object sender, EventArgs e)
+        {
+            DisplayToList();
+        }
+
+        private void lvShowText_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }
        

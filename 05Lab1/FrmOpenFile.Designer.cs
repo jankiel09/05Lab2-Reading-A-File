@@ -41,6 +41,7 @@
             lvShowText.Size = new Size(335, 204);
             lvShowText.TabIndex = 0;
             lvShowText.UseCompatibleStateImageBehavior = false;
+            lvShowText.SelectedIndexChanged += lvShowText_SelectedIndexChanged;
             // 
             // btnOpen
             // 
@@ -52,6 +53,7 @@
             btnOpen.TabIndex = 1;
             btnOpen.Text = "Open";
             btnOpen.UseVisualStyleBackColor = true;
+            btnOpen.Click += btnOpen_Click;
             // 
             // openFileDialog1
             // 

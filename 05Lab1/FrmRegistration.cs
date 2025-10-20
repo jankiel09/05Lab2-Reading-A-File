@@ -15,9 +15,6 @@ namespace _05Lab1
 
         private void button1_Click(object sender, EventArgs e)
         {
-            this.Hide(); // or this.Close();
-            FrmRegistration registrationForm = new FrmRegistration();
-            registrationForm.Show();
 
             String RelativePath = @"..\..\Paguiligan_Kiel.LabStream";
             string docPath = Path.GetFullPath(RelativePath);
@@ -33,7 +30,7 @@ namespace _05Lab1
             string birthday = dtpBirthday.Text.Trim();
             string contact = txtContact.Text.Trim();
 
-          
+
             string[] studentInfo = {
                 $"Student Number: {studentNumber}",
                 $"Name: {studentLastName}, {studentFirstName} {studentMI}",
@@ -47,10 +44,17 @@ namespace _05Lab1
             string fileName = studentNumber + ".txt";
             string filePath = Path.Combine(docPath, fileName);
 
-           
+
             File.WriteAllLines(filePath, studentInfo, Encoding.UTF8);
 
             MessageBox.Show($"Student information saved to:\n{filePath}", "Success");
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            FrmStudentRecord registrationForm = new FrmStudentRecord();
+            registrationForm.Show();
         }
     }
 }

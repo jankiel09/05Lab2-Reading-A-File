@@ -30,10 +30,11 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmStudentRecord));
             label1 = new Label();
-            listView1 = new ListView();
+            lvShowText1 = new ListView();
             btnRegister = new Button();
             btnFind = new Button();
             btnUpload = new Button();
+            openFileDialog1 = new OpenFileDialog();
             SuspendLayout();
             // 
             // label1
@@ -48,13 +49,14 @@
             label1.TabIndex = 0;
             label1.Text = "View Record";
             // 
-            // listView1
+            // lvShowText1
             // 
-            listView1.Location = new Point(12, 43);
-            listView1.Name = "listView1";
-            listView1.Size = new Size(367, 179);
-            listView1.TabIndex = 1;
-            listView1.UseCompatibleStateImageBehavior = false;
+            lvShowText1.Location = new Point(12, 43);
+            lvShowText1.Name = "lvShowText1";
+            lvShowText1.Size = new Size(367, 179);
+            lvShowText1.TabIndex = 1;
+            lvShowText1.UseCompatibleStateImageBehavior = false;
+            lvShowText1.SelectedIndexChanged += listView1_SelectedIndexChanged;
             // 
             // btnRegister
             // 
@@ -64,6 +66,7 @@
             btnRegister.TabIndex = 2;
             btnRegister.Text = "Register";
             btnRegister.UseVisualStyleBackColor = true;
+            btnRegister.Click += btnRegister_Click;
             // 
             // btnFind
             // 
@@ -73,6 +76,7 @@
             btnFind.TabIndex = 3;
             btnFind.Text = "Find";
             btnFind.UseVisualStyleBackColor = true;
+            btnFind.Click += btnFind_Click;
             // 
             // btnUpload
             // 
@@ -82,6 +86,12 @@
             btnUpload.TabIndex = 4;
             btnUpload.Text = "Upload";
             btnUpload.UseVisualStyleBackColor = true;
+            btnUpload.Click += btnUpload_Click;
+            // 
+            // openFileDialog1
+            // 
+            openFileDialog1.FileName = "openFileDialog1";
+            openFileDialog1.FileOk += openFileDialog1_FileOk;
             // 
             // FrmStudentRecord
             // 
@@ -93,7 +103,7 @@
             Controls.Add(btnUpload);
             Controls.Add(btnFind);
             Controls.Add(btnRegister);
-            Controls.Add(listView1);
+            Controls.Add(lvShowText1);
             Controls.Add(label1);
             Name = "FrmStudentRecord";
             Text = "FrmStudentRecord";
@@ -104,9 +114,10 @@
         #endregion
 
         private Label label1;
-        private ListView listView1;
+        private ListView lvShowText1;
         private Button btnRegister;
         private Button btnFind;
         private Button btnUpload;
+        private OpenFileDialog openFileDialog1;
     }
 }
