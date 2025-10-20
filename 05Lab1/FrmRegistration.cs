@@ -15,6 +15,10 @@ namespace _05Lab1
 
         private void button1_Click(object sender, EventArgs e)
         {
+            this.Hide(); // or this.Close();
+            FrmRegistration registrationForm = new FrmRegistration();
+            registrationForm.Show();
+
             String RelativePath = @"..\..\Paguiligan_Kiel.LabStream";
             string docPath = Path.GetFullPath(RelativePath);
 
