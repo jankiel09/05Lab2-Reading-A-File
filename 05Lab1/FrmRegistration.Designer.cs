@@ -49,12 +49,15 @@
             cbGender = new ComboBox();
             txtContact = new TextBox();
             button1 = new Button();
+            pictureBox1 = new PictureBox();
+            button2 = new Button();
+            ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             SuspendLayout();
             // 
             // label1
             // 
             label1.AutoSize = true;
-            label1.BackColor = Color.Transparent;
+            label1.BackColor = Color.MidnightBlue;
             label1.Font = new Font("Segoe UI", 26.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
             label1.ForeColor = Color.White;
             label1.Location = new Point(16, 16);
@@ -66,7 +69,7 @@
             // label4
             // 
             label4.AutoSize = true;
-            label4.BackColor = Color.Transparent;
+            label4.BackColor = Color.MidnightBlue;
             label4.Font = new Font("Segoe UI Semibold", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
             label4.ForeColor = Color.White;
             label4.Location = new Point(32, 85);
@@ -78,7 +81,7 @@
             // label5
             // 
             label5.AutoSize = true;
-            label5.BackColor = Color.Transparent;
+            label5.BackColor = Color.MidnightBlue;
             label5.Font = new Font("Segoe UI Semibold", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
             label5.ForeColor = Color.White;
             label5.Location = new Point(32, 135);
@@ -90,7 +93,7 @@
             // label6
             // 
             label6.AutoSize = true;
-            label6.BackColor = Color.Transparent;
+            label6.BackColor = Color.MidnightBlue;
             label6.Font = new Font("Segoe UI Semibold", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
             label6.ForeColor = Color.White;
             label6.Location = new Point(78, 185);
@@ -102,7 +105,7 @@
             // label7
             // 
             label7.AutoSize = true;
-            label7.BackColor = Color.Transparent;
+            label7.BackColor = Color.MidnightBlue;
             label7.Font = new Font("Segoe UI Semibold", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
             label7.ForeColor = Color.White;
             label7.Location = new Point(47, 241);
@@ -142,7 +145,7 @@
             // label8
             // 
             label8.AutoSize = true;
-            label8.BackColor = Color.Transparent;
+            label8.BackColor = Color.MidnightBlue;
             label8.Font = new Font("Segoe UI Semibold", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
             label8.ForeColor = Color.White;
             label8.Location = new Point(358, 85);
@@ -163,7 +166,7 @@
             // label9
             // 
             label9.AutoSize = true;
-            label9.BackColor = Color.Transparent;
+            label9.BackColor = Color.MidnightBlue;
             label9.Font = new Font("Segoe UI Semibold", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
             label9.ForeColor = Color.White;
             label9.Location = new Point(358, 185);
@@ -175,7 +178,7 @@
             // label10
             // 
             label10.AutoSize = true;
-            label10.BackColor = Color.Transparent;
+            label10.BackColor = Color.MidnightBlue;
             label10.Font = new Font("Segoe UI Semibold", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
             label10.ForeColor = Color.White;
             label10.Location = new Point(358, 244);
@@ -187,7 +190,7 @@
             // label11
             // 
             label11.AutoSize = true;
-            label11.BackColor = Color.Transparent;
+            label11.BackColor = Color.MidnightBlue;
             label11.Font = new Font("Segoe UI Semibold", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
             label11.ForeColor = Color.White;
             label11.Location = new Point(603, 138);
@@ -199,7 +202,7 @@
             // label12
             // 
             label12.AutoSize = true;
-            label12.BackColor = Color.Transparent;
+            label12.BackColor = Color.MidnightBlue;
             label12.Font = new Font("Segoe UI Semibold", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
             label12.ForeColor = Color.White;
             label12.Location = new Point(357, 137);
@@ -217,6 +220,7 @@
             // 
             // txtMI
             // 
+            txtMI.BackColor = Color.White;
             txtMI.Location = new Point(646, 140);
             txtMI.Name = "txtMI";
             txtMI.Size = new Size(51, 23);
@@ -240,20 +244,44 @@
             // 
             // button1
             // 
-            button1.Location = new Point(335, 295);
+            button1.BackColor = Color.Transparent;
+            button1.FlatStyle = FlatStyle.Popup;
+            button1.Font = new Font("Segoe UI Semibold", 9.75F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            button1.Location = new Point(326, 284);
             button1.Name = "button1";
-            button1.Size = new Size(75, 23);
+            button1.Size = new Size(96, 34);
             button1.TabIndex = 21;
             button1.Text = "Register";
-            button1.UseVisualStyleBackColor = true;
+            button1.UseVisualStyleBackColor = false;
             button1.Click += button1_Click;
+            // 
+            // pictureBox1
+            // 
+            pictureBox1.Image = (Image)resources.GetObject("pictureBox1.Image");
+            pictureBox1.Location = new Point(1, 1);
+            pictureBox1.Name = "pictureBox1";
+            pictureBox1.Size = new Size(767, 342);
+            pictureBox1.TabIndex = 22;
+            pictureBox1.TabStop = false;
+            // 
+            // button2
+            // 
+            button2.BackColor = Color.Transparent;
+            button2.FlatStyle = FlatStyle.Popup;
+            button2.Font = new Font("Segoe UI Semibold", 9.75F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            button2.Location = new Point(646, 284);
+            button2.Name = "button2";
+            button2.Size = new Size(96, 34);
+            button2.TabIndex = 23;
+            button2.Text = "Records";
+            button2.UseVisualStyleBackColor = false;
             // 
             // FrmRegistration
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            BackgroundImage = (Image)resources.GetObject("$this.BackgroundImage");
             ClientSize = new Size(768, 345);
+            Controls.Add(button2);
             Controls.Add(button1);
             Controls.Add(txtContact);
             Controls.Add(cbGender);
@@ -274,8 +302,10 @@
             Controls.Add(label5);
             Controls.Add(label4);
             Controls.Add(label1);
+            Controls.Add(pictureBox1);
             Name = "FrmRegistration";
             Text = "FrmRegistration";
+            ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
             ResumeLayout(false);
             PerformLayout();
         }
@@ -302,5 +332,7 @@
         private ComboBox cbGender;
         private TextBox txtContact;
         private Button button1;
+        private PictureBox pictureBox1;
+        private Button button2;
     }
 }
